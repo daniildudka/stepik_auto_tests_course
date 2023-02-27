@@ -9,3 +9,8 @@ try:
     browser.get(link)
     button = browser.find_element(By.ID, "submit_button")
     button.click()
+
+finally:
+    # закрываем браузер после всех манипуляций
+    keyboard.wait('esc')
+    browser.quit()
